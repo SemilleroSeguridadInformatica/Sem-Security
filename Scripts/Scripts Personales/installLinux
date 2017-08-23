@@ -1,0 +1,84 @@
+#title           :installLinux.sh
+#description     :This script will install programs on linux.
+#author		 :Mateo Gutierrez Gomez
+#date            :Febrero 21 2014
+#usage		 :bash installLinux.sh
+#notes           :give root access to this script.
+#==============================================================================
+
+#!/usr/bin/env bash
+
+declare -A osInfo;
+osInfo[/etc/redhat-release]=yum
+osInfo[/etc/arch-release]=pacman
+osInfo[/etc/debian_version]=apt-get
+
+if [ "$(id -u)" != "0" ]; then
+    echo "No posee permisos de root" 1>&2
+    exit 1
+else
+    for f in ${!osInfo[@]}
+    do
+    	if [[ -f $f ]];then
+       	    if [ ${osInfo[$f]} = 'yum' ];then
+     	  	sudo yum -y update
+    		sudo yum -y upgrade
+    		sudo yum -y install subversion
+    		sudo yum -y install git-core
+    		sudo yum -y install emacs
+    		sudo yum -y install gimp
+    		sudo yum -y install kolourpaint4
+    		sudo yum -y install gdebi
+    		sudo yum -y install vlc
+    		sudo yum -y install gcc
+    		sudo yum -y install g++
+    		sudo yum -y install dropbox
+    		sudo yum -y install bleachbit
+    		echo -n "Desea instalar LaTeX? [S,N]:"
+    		read RESLAT
+    		if [ $RESLAT = 's' ] || [ $RESLAT = 'S' ]; then
+		    echo "Se tomara un tiempo mientras que se instala LaTeX"
+		    sudo yum -y install latex*
+    		fi
+       	    elif [ ${osInfo[$f]} = 'pacman' ];then
+	  	sudo pacman --noconfirm -Syu
+    		sudo pacman -S --noconfirm install subversion
+    		sudo pacman -S --noconfirm install git-core
+    		sudo pacman -S --noconfirm install emacs
+    		sudo pacman -S --noconfirm install gimp
+    		sudo pacman -S --noconfirm install kolourpaint4
+    		sudo pacman -S --noconfirm install gdebi
+    		sudo pacman -S --noconfirm install vlc
+    		sudo pacman -S --noconfirm install gcc
+    		sudo pacman -S --noconfirm install g++
+    		sudo pacman -S --noconfirm install dropbox
+    		sudo pacman -S --noconfirm install bleachbit
+    		echo -n "Desea instalar LaTeX? [S,N]:"
+    		read RESLAT
+    		if [ $RESLAT = 's' ] || [ $RESLAT = 'S' ]; then
+		    echo "Se tomara un tiempo mientras que se instala LaTeX"
+		    sudo pacman -S --noconfirm install latex*
+    		fi
+       	    else [ ${osInfo[$f]} = 'apt-get' ];
+		 sudo apt-get -y update
+    		 sudo apt-get -y upgrade
+    		 sudo apt-get -y install subversion
+    		 sudo apt-get -y install git-core
+    		 sudo apt-get -y install emacs
+    		 sudo apt-get -y install gimp
+    		 sudo apt-get -y install kolourpaint4
+    		 sudo apt-get -y install gdebi
+    		 sudo apt-get -y install vlc
+    		 sudo apt-get -y install gcc
+    		 sudo apt-get -y install g++
+    		 sudo apt-get -y install bleachbit
+    		 echo -n "Desea instalar LaTeX? [S,N]:"
+    		 read RESLAT
+    		 if [ $RESLAT = 's' ] || [ $RESLAT = 'S' ]; then
+		     echo "Se tomara un tiempo mientras que se instala LaTeX"
+		     sudo apt-get -y install latex*
+    		 fi
+       	    fi
+    	fi
+    done
+fi
