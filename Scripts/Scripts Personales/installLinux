@@ -1,8 +1,8 @@
-#title           :installLinux.sh
+#title           :installLinux
 #description     :This script will install programs on linux.
 #author		 :Mateo Gutierrez Gomez
 #date            :Febrero 21 2014
-#usage		 :bash installLinux.sh
+#usage		 :bash installLinux
 #notes           :give root access to this script.
 #==============================================================================
 
