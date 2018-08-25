@@ -20,8 +20,7 @@ Create an script with this:
    #!/bin/sh
 
    /bin/getflag >> /tmp/flag03.out
+
    $ cp getflag.sh /home/flag03/writable.d/
 
-.. note::
-
-   You have to wait until cron gets executed or execute the program given
+.. note:: You have to wait until cron gets executed or execute the program given

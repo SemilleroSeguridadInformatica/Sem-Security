@@ -26,5 +26,7 @@ On :bash:`tmp` create a bash script with this and name it echo (without extensio
 
 :bash:`$ chmod 777 echo`
 
-and last execute :bash:`getflag` 
+and last execute
+
+:bash:`getflag` 
 

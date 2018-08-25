@@ -18,7 +18,7 @@ Export a variable call :bash:`USER` like this:
 
 :bash:`$export USER=";getflag"`
 
-and then run :bash:`flag02`
+and then run
 
 :bash:`/home/flag02/flag02`
 

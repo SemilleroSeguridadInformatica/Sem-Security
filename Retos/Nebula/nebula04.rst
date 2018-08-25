@@ -14,9 +14,8 @@ Solution
 
    $ ln -s /home/flag04/token Token
    $ /home/flag04/flag04 /home/level04/Token
-   ssh flag04@IP
-.. note::
+   ssh flag04@localhost
    
-   Token as password
+.. note:: Token as password
 
-   :bash:`getflag`
+   :bash:`$getflag`

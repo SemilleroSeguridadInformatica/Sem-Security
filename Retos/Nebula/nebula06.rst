@@ -23,8 +23,7 @@ Then use the program John the Ripper like this
     echo 'flag06:ueqwOCnSGdsuM:993:993::/home/flag06:/bin/sh' > /root/flag06
     john /root/flag06
     ssh flag06@localhost
-.. note::
+    
+.. note::Password is the one John gives you
 
-   Password is the one John gives you
-
-   :bash:`getflag`
+   :bash:`$getflag`

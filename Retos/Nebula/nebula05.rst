@@ -25,8 +25,7 @@ Un-tar into level05 home
    .ssh/id_rsa
    .ssh/authorized_keys
    ssh flag05@localhost
-.. note::
-
-   Password is not asked since we have a key
+   
+.. note:: Password is not asked since we have a key
 
    :bash:`$getflag`
