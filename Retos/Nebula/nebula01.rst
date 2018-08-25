@@ -9,10 +9,7 @@ Nebula level 01
 Basic Information
 -----------------
 
-**Official Website**
-
-https://exploit-exercises.com/nebula/level01/
-
+**Home Page** https://exploit-exercises.com/nebula/level01/
 
 Solution
 --------
