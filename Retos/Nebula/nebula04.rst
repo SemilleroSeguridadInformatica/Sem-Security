@@ -1,5 +1,8 @@
 .. _nebula4:
 
+.. role:: bash(code)
+	  :language: bash
+		     
 Nebula 4
 ========
 
