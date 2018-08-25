@@ -24,6 +24,6 @@ Then use the program John the Ripper like this
     john /root/flag06
     ssh flag06@localhost
     
-.. note::Password is the one John gives you
+.. note:: Password is the one John gives you
 
    :bash:`$getflag`

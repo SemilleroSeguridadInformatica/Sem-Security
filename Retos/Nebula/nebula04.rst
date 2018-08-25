@@ -18,4 +18,4 @@ Solution
    
 .. note:: Token as password
 
-   :bash:`$getflag`
+   :bash: `$getflag`
