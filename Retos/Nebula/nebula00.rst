@@ -9,12 +9,10 @@ Nebula level 00
 Basic information
 -----------------
 
-Source: https://exploit-exercises.com/nebula/level00/
+**Official Website:** https://exploit-exercises.com/nebula/level00/
 
 
-execute this on console
+Execute this on console
 
-.. code-block:: bash
-
-$ find / -perm -4000 -exec ls -ldb {} \; 2>/dev/null | grep "flag00"
+:bash:`$ find / -perm -4000 -exec ls -ldb {} \; 2>/dev/null | grep "flag00"`
 
