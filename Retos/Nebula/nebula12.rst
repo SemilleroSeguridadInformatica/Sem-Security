@@ -1,7 +1,7 @@
 .. _nebula12:
 
 .. role:: bash(code)
-	  :language: bash
+    :language: bash
 
 Nebula 12
 =========

