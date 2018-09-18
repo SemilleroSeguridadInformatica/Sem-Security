@@ -1,4 +1,4 @@
-.. _nebula6:
+.. _nebula06:
 
 .. role:: bash(code)
 	  :language: bash
@@ -10,6 +10,8 @@ Basic Information
 -----------------
 
 **Home Page** https://exploit-exercises.com/nebula/level06/
+
+**No Source Code Given**
 
 Solution
 --------
