@@ -17,6 +17,7 @@ Basic Information
 **Source Code**
 
 .. code-block:: lua
+		
 		local socket = require("socket")
 		local server = assert(socket.bind("127.0.0.1", 50001))
 
