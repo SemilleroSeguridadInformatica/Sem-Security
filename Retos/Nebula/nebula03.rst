@@ -17,6 +17,7 @@ Solution
 --------
 
 Create an script with this:
+
 .. code-block:: bash
 
    #!/bin/sh
@@ -25,4 +26,4 @@ Create an script with this:
 
    $ cp getflag.sh /home/flag03/writable.d/
 
-.. note:: You have to wait until cron gets executed or execute the program given
+.. note:: You have to wait until cron gets executed
