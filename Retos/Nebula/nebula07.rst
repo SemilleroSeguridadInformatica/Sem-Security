@@ -4,7 +4,7 @@
 	  :language: bash
 
 .. role:: pearl(code)
-	  :language: pearl
+	  :language: perl
 		     
 Nebula 7
 ========
@@ -16,7 +16,7 @@ Basic Information
 
 **Source Code**
 
-.. code-block:: pearl
+.. code-block:: perl
 		
 		#!/usr/bin/perl
 
